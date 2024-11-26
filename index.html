@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OAKLEY - Revenda Novos e Seminovos</title>
+    <link rel="icon" href="./imgs/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/inputmask/dist/inputmask.min.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <style>
+        /* cor da fonte e fonte */
+        * {
+            color: #fff;
+            font-family: "Source Code Pro", monospace;
+        }
+
+        /* centralizando texto de navegação */
+        .nav-link {
+            text-align: center;
+        }
+
+        /* header acompanha scroll */
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            z-index: 1050;
+        }
+    </style>
+</head>
+
+<body class="bg-secondary fw-bold text-center text-uppercase">
+    <!-- header -->
+    <header id="cabecalho">
+        <div class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <div class="container">
+                <h1 class="fw-bold">Oakley - Oldschool</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#sobre">Sobre Nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#produtos">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#promocoes">Promoções</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button id="btn-checar-emails" type="button" class="btn btn-warning">AVISOS!!!</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- carousel -->
+    <div class="container">
+        <div id="carousel-exemplo" class="carousel carousel-fade slide pt-3 pb-3" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="./imgs/jordan1.png">
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./imgs/runner1.png">
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./imgs/travis1.png">
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- grid e cards -->
+    <div class="container pt-3 pb-3" id="sobre" data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <div class="row">
+            <div class="col-12">
+                <div class="card text-bg-dark">
+                    <h2 class="card-title pt-3 pb-3 fs-1 fw-bold">Melhores achados Oakleys BR!</h2>
+                    <img class="d-block w-100" src="./imgs/loja.jpg" alt="Loja">
+                    <h3 class="card-title pt-3">Sobre Nós</h3>
+                    <p class="card-text pt-3 pb-3">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum perferendis, sunt in autem
+                        distinctio optio exercitationem rerum voluptatum! Accusamus sed laudantium illo odio amet quis
+                        aliquid est tempore repellat doloribus!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="produtos">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card text-bg-dark">
+                    <img src="./imgs/mars.jpg">
+                    <div class="card-body">
+                        <h4 class="fw-bold">Mars Jordan</h4>
+                        <h5 class="card-subtitle fw-bold">Nunca Usado!!!</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <a href="#" class="btn btn-warning">Comprar</a>
+                    </div>
+                    <footer class="card-footer">
+                        <time>26/11/2024 às 15:00</time>
+                    </footer>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card text-bg-dark">
+                    <img src="imgs/penny.jpg">
+                    <div class="card-body">
+                        <h4 class="fw-bold">Penny Cooper</h4>
+                        <h5 class="card-subtitle fw-bold">Seminovo!!!</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <a href="#" class="btn btn-warning">Comprar</a>
+                    </div>
+                    <footer class="card-footer">
+                        <time>26/11/2024 às 15:00</time>
+                    </footer>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card text-bg-dark">
+                    <img src="./imgs/racing.jpg">
+                    <div class="card-body">
+                        <h4 class="fw-bold">Racing Jacket</h4>
+                        <h5 class="card-subtitle fw-bold">Nunca Usado!!!</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <a href="#" class="btn btn-warning">Comprar</a>
+                    </div>
+                    <footer class="card-footer">
+                        <time>26/11/2024 às 15:00</time>
+                    </footer>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card text-bg-dark">
+                    <img src="./imgs/piet.png">
+                    <div class="card-body">
+                        <h4 class="fw-bold">Eye Jacket x Piet</h4>
+                        <h5 class="card-subtitle fw-bold">Nunca Usado!!!</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <a href="#" class="btn btn-warning">Comprar</a>
+                    </div>
+                    <footer class="card-footer">
+                        <time>26/11/2024 às 15:00</time>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- promoções -->
+    <div class="container" id="promocoes">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 mb-4">
+                <div class="card text-bg-dark">
+                    <img src="./imgs/promocoes.jpg">
+                    <div class="card-body">
+                        <h4 class=">Promoções!</h4>
+                        <h5 class="card-subtitle">Área em construção</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 mb-4">
+                <div class="card text-bg-dark">
+                    <img src="./imgs/promo2.jpg">
+                    <div class="card-body">
+                        <h4 class=">Promoções!</h4>
+                        <h5 class="card-subtitle">Área em construção</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contato -->
+    <div id="contato" class="container bg-dark pt-3 pb-3" style="max-width: 760px; border-radius: 8px;">
+        <div class="row justify-content-center mb-3">
+            <div class="col-lg-8 mb-4">
+                <h2 class="fw-bold text-center">Nos envie sua mensagem, entraremos em contato em até 72 horas.</h2>
+                <form>
+                    <div class="mb-2">
+                        <label for="nome" class="form-label fw-bold">Seu nome:</label>
+                        <input type="text" id="nome" class="form-control" placeholder="Nome Sobrenome">
+                    </div>
+                    <div class="mb-2">
+                        <label for="email" class="form-label fw-bold">Seu e-mail:</label>
+                        <input type="email" id="email" class="form-control" placeholder="exemplo@exemplo.com">
+                    </div>
+                    <div class="mb-2">
+                        <label for="telefone" class="form-label fw-bold">Seu telefone:</label>
+                        <input type="tel" id="telefone" class="form-control" placeholder="(XX)XXXXX-XXXX">
+                    </div>
+                    <div class="mb-2">
+                        <label for="mensagem" class="form-label fw-bold">Envia sua mensagem:</label>
+                        <textarea id="mensagem" class="form-control" style="resize: none;" rows="4"></textarea>
+                    </div>
+                    <div class="form-check form-switch mb-2">
+                        <label for="aceito-termos" class="form-check-label fw-bold">Li e concordo.</label>
+                        <input type="checkbox" id="aceito-termos" class="form-check-input">
+                    </div>
+                    <button class="btn btn-warning w-100 fw-bold text-uppercase">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- toast, aviso -->
+    <div class="toast-container bg-dark position-fixed bottom-0 end-0 p-3">
+        <div data-bs-autohide="false" class="toast" id="mensagens-alerta">
+            <header class="toast-header bg-dark">
+                <strong>Importante!</strong>
+            </header>
+            <div class="toast-body bg-dark">
+                Use o cupom: OAK10 para 10% de desconto!
+                <div class="mt-2 pt-2 border-top">
+                    <button data-bs-dismiss="toast" class="btn btn-danger">
+                        Descartar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- rodapé assinatura -->
+    <div class="footer">
+        <footer class="mt-3">
+            <p class="text-center fst-italic text-light">
+                2024 &copy; Samuel Tonon - Desenvolvedor Full Stack Python
+            </p>
+        </footer>
+    </div>
+
+    <!-- scripts interação js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const ativadorToast = document.getElementById('btn-checar-emails');
+        const mensagem = document.getElementById('mensagens-alerta');
+
+        if (ativadorToast) {
+            ativadorToast.addEventListener('click', function () {
+                const toast = new bootstrap.Toast(mensagem)
+                toast.show();
+            });
+        };
+
+        var telefoneMask = new Inputmask("(99)99999-9999");
+        telefoneMask.mask(document.getElementById("telefone"));
+
+        var emailMask = new Inputmask({
+            alias: "email",
+            placeholder: "exemplo@exemplo.com"
+        });
+        emailMask.mask(document.getElementById("email"));
+
+    </script>
+</body>
+
+</html>
